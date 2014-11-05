@@ -1,5 +1,4 @@
 package com.vj.stringmatch;
-import com.vj.stringmatch.StringMatcher;
 
 public class MatcherTest {
 	public static void main(String[] args)

@@ -1,20 +1,5 @@
 package com.vj.stringmatch;
 
-/**
- * Description:
- * <p/>
- * Compilation: {@code javac TrieSymbolTable.java}
- * <p/>
- * Execution: {@code java TrieSymbolTable}
- * <p/>
- * Dependencies:
- * <p/>
- * {@author Vijay Ananth}
- * <p/>
- * Email: vijay.hassan@gmail.com
- * <p/>
- * Date: 04/11/14
- */
 public class TrieSymbolTable <Value> {
 
     private class Node {
@@ -71,7 +56,7 @@ public class TrieSymbolTable <Value> {
         return  x;
     }
 
-    public Value logestPrefix(String key) {
+    public Value longestPrefix(String key) {
         if (key == null || key.length() == 0) return null;
         int length = 0;
         Node x = root;

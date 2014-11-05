@@ -28,7 +28,7 @@ public class StringMatcher {
     public int lookup(String input) {
         Integer i = (Integer) ST.get(input);
         if (i == null) {
-            i = (Integer) ST.logestPrefix(input);
+            i = (Integer) ST.longestPrefix(input);
         }
 
         if (i == null) {

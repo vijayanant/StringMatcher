@@ -92,9 +92,9 @@ public class TrieSymbolTable <Value> {
         char c = key.charAt(d);
 
 
-        if      (c < x.key) x.left =  remove(x.left, key, d);
-        else if (c > x.key) x.right = remove(x.right, key, d);
-        else if (d < key.length() -1) x.mid = remove(x.mid, key, d+1);
+        if      (c < x.key)             x.left  = remove(x.left, key, d);
+        else if (c > x.key)             x.right = remove(x.right, key, d);
+        else if (d < key.length() -1)   x.mid   = remove(x.mid,   key, d+1);
 
         // found the node
         //delete node if it has no children

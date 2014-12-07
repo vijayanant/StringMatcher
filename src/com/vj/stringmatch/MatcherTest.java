@@ -13,19 +13,19 @@ public class MatcherTest {
 		//Basic prefix test
 		{
 			StringMatcher matcher = new StringMatcher();
-			matcher.add_prefix_match("img", 1);
+			matcher.add_prefix_match("img", 10);
 
-            assert(matcher.lookup("imgcutepuppy") == 1);
+            assert(matcher.lookup("imgcutepuppy") == 10);
 			assert(matcher.lookup("htmlcutepuppy") == -1);
 		}
 
 		//Basic longest match test
 		{
 			StringMatcher matcher = new StringMatcher();
-			matcher.add_prefix_match("img", 1);
-			matcher.add_prefix_match("imghd", 2);
-			assert(matcher.lookup("imgcutepuppy") == 1);
-			assert(matcher.lookup("imghdcutepuppy") == 2);
+			matcher.add_prefix_match("img", 25);
+			matcher.add_prefix_match("imghd", 50);
+			assert(matcher.lookup("imgcutepuppy") == 25);
+			assert(matcher.lookup("imghdcutepuppy") == 50);
 		}
 
 		// mix and match
